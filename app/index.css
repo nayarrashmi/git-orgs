@@ -1,0 +1,153 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  padding:0;
+}
+li{
+  list-style-type: none;
+}
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.button {
+  color: #0a0a0a;
+  background: #d0d0d6;
+  border: none;
+  font-size: 16px;
+  /*border-radius: 3px;*/
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+.button:hover:enabled {
+  background: #b2b2b7;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width:500px;
+  align-items: center;
+}
+
+.column input {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.column label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.nav {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar {
+  background: #0a0a0a;
+
+}
+
+.nav div{
+  margin-right: 25px;
+}
+
+.input-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.input-search input {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  flex-basis: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+.repos-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.repos-list .repo-item{
+  flex:1;
+  border: 1px solid #d0d0d6;
+  margin: 10px;
+  padding:0 15px;
+}
+
+.widget {
+  display: flex;
+  margin: 10px;
+}
+
+.widget .widget-item{
+  flex: 1;
+  font-size: 12px;
+}
+
+.avatar{
+  width:100px;
+  border-radius:50%;
+}
+.repo-info {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.avatar-grid {
+  display: flex;
+  justify-content: center;
+}
+.avatar-grid-item {
+  align-self: center;
+  margin-right: 15px;
+}
+.sorters {
+  display: flex;
+}
+.sorters li{
+  margin-right: 15px;
+  cursor: pointer;
+}
