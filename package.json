@@ -11,7 +11,8 @@
     "test:watch": "jest --watchAll",
     "deploy": "npm run build  && firebase deploy",
     "firebase-init": "firebase login && firebase init",
-    "validate": "npm-run-all --parallel test build"
+    "validate": "npm-run-all --parallel test build",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "babel": {
     "presets": [
@@ -39,6 +40,7 @@
     "babel-plugin-dynamic-import-node": "^2.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "codecov": "^3.2.0",
     "css-loader": "^1.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-15": "^1.3.1",
