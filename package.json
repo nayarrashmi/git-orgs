@@ -13,7 +13,7 @@
     "firebase-init": "firebase login && firebase init",
     "validate": "npm-run-all --parallel test build",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "coveralls": "jest --coverage && cat .coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "babel": {
     "presets": [
