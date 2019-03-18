@@ -12,7 +12,7 @@ notifications:
 before_install:
   - npm update
 install:
-  - npm instal
+  - npm install
 script:
   - npm run validate
 after_success:
