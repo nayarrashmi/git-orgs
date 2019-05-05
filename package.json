@@ -13,7 +13,9 @@
     "firebase-init": "firebase login && firebase init",
     "validate": "npm-run-all --parallel test build",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "babel": {
     "presets": [
@@ -29,7 +31,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
-    "uglifyjs-webpack-plugin": "^2.1.2"
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -55,5 +58,6 @@
     "webpack-dev-server": "^3.1.5"
   },
   "author": "rashmi nair <nair.rashmi1406@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
